@@ -1,16 +1,15 @@
-
 {
-  "window.zoomLevel": 0.8,
+  "window.zoomLevel": 0.6,
   "editor.minimap.enabled": false,
   "workbench.colorTheme": "Min Dark",
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "symbols",
   "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 16,
   "editor.lineHeight": 1.6,
   "editor.rulers": [80, 120],
   "editor.renderLineHighlight": "gutter",
   "editor.stickyScroll.enabled": false,
-  "liveServer.settings.useLocalIp": true,
   "workbench.editor.labelFormat": "short",
   "explorer.compactFolders": false,
   "workbench.activityBar.location": "hidden",
@@ -20,40 +19,9 @@
   "workbench.layoutControl.enabled": false,
   "editor.hideCursorInOverviewRuler": true,
   "window.titleBarStyle": "native",
-  "apc.electron": {
-    "titleBarStyle": "hidden",
-    "titleBarOverlay": {
-      "color": "#1a1a1a",
-      "symbolColor": "#c5c5c5",
-      "height": 43
-    },
-    "opacity": 1,
-    "vibrancy": "dark",
-    "frame": false
-  },
-  "apc.header": {
-    "height": 36
-  },
-  "apc.listRow": {
-    "height": 24
-  },
-  "apc.font.family": "Inter",
-  "apc.stylesheet": {
-    ".titlebar-left > a": "display: none",
-    ".monaco-workbench .part>.composite.header-or-footer, .monaco-workbench .part>.composite.title": "justify-content: start",
-    ".frameless-title-bar:not(.statusbar-top) .monaco-workbench:not(.fullscreen) .auxiliarybar .inline-auxiliarybar-placeholder, .inline-title-bar:not(.statusbar-top) .monaco-workbench:not(.fullscreen) .auxiliarybar .inline-auxiliarybar-placeholder, .frameless-title-bar:not(.activitybar-top):not(.statusbar-top) .monaco-workbench:not(.fullscreen) .sidebar .composite.title .title-label, .inline-title-bar:not(.activitybar-top):not(.statusbar-top) .monaco-workbench:not(.fullscreen) .sidebar .composite.title .title-label": "display: none",
-    ".editor-actions": "display: none",
-    ".nosidebar .inline-tabs-placeholder": "width: 75px",
-    ".pane-header": "padding: 0 8px",
-    ".pane-body": "padding: 8px 6px 8px 4px",
-    ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
-  },
   "window.menuBarVisibility": "compact",
   "editor.smoothScrolling": true,
   "explorer.fileNesting.enabled": true,
-  "symbols.hidesExplorerArrows": false,
   "explorer.fileNesting.patterns": {
     "tailwind.config.*": "tailwind.config*, postcss.config*"
   },
@@ -71,9 +39,18 @@
   ],
   "editor.lineNumbers": "relative",
   "workbench.sideBar.location": "right",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -140,5 +117,19 @@
       "before": ["leader", "n", "e"],
       "commands": "workbench.explorer.fileView.focus"
     }
-  ]
+  ],
+  "symbols.hidesExplorerArrows": false,
+  "livePreview.previewDebounceDelay": 100,
+  "dart.flutterSdkPath": "C:\\flutter",
+  "[dart]": {
+    "editor.codeActionsOnSave": {
+      "quickfix.insertSemicolon": "always"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
+  "git.autofetch": true,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "liveshare.languages.allowGuestCommandControl": true
 }
